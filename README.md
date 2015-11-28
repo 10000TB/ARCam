@@ -1,2 +1,1 @@
-# ARCamAndroid
-The Panoramas App
+
