@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MainCameraViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    MainCameraViewController *mainCameraViewController = [MainCameraViewController new];
+    self.window.rootViewController = mainCameraViewController;
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

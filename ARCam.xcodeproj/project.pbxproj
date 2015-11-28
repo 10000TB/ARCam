@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		002967831BF57B11009A7DF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 002967821BF57B11009A7DF5 /* main.m */; };
 		002967861BF57B11009A7DF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 002967851BF57B11009A7DF5 /* AppDelegate.m */; };
-		002967891BF57B11009A7DF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002967881BF57B11009A7DF5 /* ViewController.m */; };
-		0029678C1BF57B11009A7DF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0029678A1BF57B11009A7DF5 /* Main.storyboard */; };
 		0029678F1BF57B11009A7DF5 /* ARCam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0029678D1BF57B11009A7DF5 /* ARCam.xcdatamodeld */; };
 		002967911BF57B11009A7DF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002967901BF57B11009A7DF5 /* Assets.xcassets */; };
 		002967941BF57B11009A7DF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 002967921BF57B11009A7DF5 /* LaunchScreen.storyboard */; };
 		0029679F1BF57B11009A7DF5 /* ARCamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0029679E1BF57B11009A7DF5 /* ARCamTests.m */; };
 		002967AA1BF57B11009A7DF5 /* ARCamUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 002967A91BF57B11009A7DF5 /* ARCamUITests.m */; };
+		00B6FD691C0A625D002B1653 /* MainCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B6FD681C0A625D002B1653 /* MainCameraView.m */; };
+		00B6FD6E1C0A62F2002B1653 /* MainCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B6FD6D1C0A62F2002B1653 /* MainCameraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +40,6 @@
 		002967821BF57B11009A7DF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		002967841BF57B11009A7DF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		002967851BF57B11009A7DF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		002967871BF57B11009A7DF5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		002967881BF57B11009A7DF5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0029678B1BF57B11009A7DF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0029678E1BF57B11009A7DF5 /* ARCam.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ARCam.xcdatamodel; sourceTree = "<group>"; };
 		002967901BF57B11009A7DF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		002967931BF57B11009A7DF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +50,10 @@
 		002967A51BF57B11009A7DF5 /* ARCamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARCamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		002967A91BF57B11009A7DF5 /* ARCamUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCamUITests.m; sourceTree = "<group>"; };
 		002967AB1BF57B11009A7DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00B6FD671C0A625D002B1653 /* MainCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCameraView.h; sourceTree = "<group>"; };
+		00B6FD681C0A625D002B1653 /* MainCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCameraView.m; sourceTree = "<group>"; };
+		00B6FD6C1C0A62F2002B1653 /* MainCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCameraViewController.h; sourceTree = "<group>"; };
+		00B6FD6D1C0A62F2002B1653 /* MainCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCameraViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,13 +106,8 @@
 			children = (
 				002967841BF57B11009A7DF5 /* AppDelegate.h */,
 				002967851BF57B11009A7DF5 /* AppDelegate.m */,
-				002967871BF57B11009A7DF5 /* ViewController.h */,
-				002967881BF57B11009A7DF5 /* ViewController.m */,
-				0029678A1BF57B11009A7DF5 /* Main.storyboard */,
-				002967901BF57B11009A7DF5 /* Assets.xcassets */,
-				002967921BF57B11009A7DF5 /* LaunchScreen.storyboard */,
-				002967951BF57B11009A7DF5 /* Info.plist */,
-				0029678D1BF57B11009A7DF5 /* ARCam.xcdatamodeld */,
+				00B6FD6A1C0A6286002B1653 /* Views */,
+				00B6FD6B1C0A62A0002B1653 /* Controllers */,
 				002967811BF57B11009A7DF5 /* Supporting Files */,
 			);
 			path = ARCam;
@@ -120,6 +116,10 @@
 		002967811BF57B11009A7DF5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0029678D1BF57B11009A7DF5 /* ARCam.xcdatamodeld */,
+				002967951BF57B11009A7DF5 /* Info.plist */,
+				002967921BF57B11009A7DF5 /* LaunchScreen.storyboard */,
+				002967901BF57B11009A7DF5 /* Assets.xcassets */,
 				002967821BF57B11009A7DF5 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -141,6 +141,24 @@
 				002967AB1BF57B11009A7DF5 /* Info.plist */,
 			);
 			path = ARCamUITests;
+			sourceTree = "<group>";
+		};
+		00B6FD6A1C0A6286002B1653 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00B6FD671C0A625D002B1653 /* MainCameraView.h */,
+				00B6FD681C0A625D002B1653 /* MainCameraView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		00B6FD6B1C0A62A0002B1653 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				00B6FD6C1C0A62F2002B1653 /* MainCameraViewController.h */,
+				00B6FD6D1C0A62F2002B1653 /* MainCameraViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +266,6 @@
 			files = (
 				002967941BF57B11009A7DF5 /* LaunchScreen.storyboard in Resources */,
 				002967911BF57B11009A7DF5 /* Assets.xcassets in Resources */,
-				0029678C1BF57B11009A7DF5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +290,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				002967891BF57B11009A7DF5 /* ViewController.m in Sources */,
+				00B6FD6E1C0A62F2002B1653 /* MainCameraViewController.m in Sources */,
+				00B6FD691C0A625D002B1653 /* MainCameraView.m in Sources */,
 				002967861BF57B11009A7DF5 /* AppDelegate.m in Sources */,
 				0029678F1BF57B11009A7DF5 /* ARCam.xcdatamodeld in Sources */,
 				002967831BF57B11009A7DF5 /* main.m in Sources */,
@@ -312,14 +330,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0029678A1BF57B11009A7DF5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0029678B1BF57B11009A7DF5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		002967921BF57B11009A7DF5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -502,6 +512,7 @@
 				002967B01BF57B11009A7DF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		002967B11BF57B11009A7DF5 /* Build configuration list for PBXNativeTarget "ARCamTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +521,7 @@
 				002967B31BF57B11009A7DF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		002967B41BF57B11009A7DF5 /* Build configuration list for PBXNativeTarget "ARCamUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +530,7 @@
 				002967B61BF57B11009A7DF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
