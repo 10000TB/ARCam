@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol MainCameraViewDelegate <NSObject>
+
+-(void)lastTakenPanoramasPreviewTapped;
+
+@end
+
 @interface MainCameraView : UIView
+
+@property (nonatomic, strong) UIImageView *lastTakenPanoramasPreview;
+@property (nonatomic, weak) id<MainCameraViewDelegate> Delegate;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  MainCameraViewController.h
+//  GalleryView.h
 //  ARCam
 //
 //  Created by Xuehao(David) Hu on 11/28/15.
@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MainCameraView.h"
 
-@interface MainCameraViewController : UIViewController
+@interface GalleryView : UIView
+{
+
+}
+@property (nonatomic, strong) UITextField *nameItTextfield;
 
 @end
