@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GalleryView : UIView
-{
+@protocol GalleryViewDelegate <NSObject>
 
-}
+-(void)goBackButtonTapped:(UIButton *)sender;
+
+@end
+
+@interface GalleryView : UIView
+
 @property (nonatomic, strong) UITextField *nameItTextfield;
+@property (nonatomic, weak) id<GalleryViewDelegate> delegate;
+
 
 @end

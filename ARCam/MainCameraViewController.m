@@ -20,13 +20,13 @@
 
 -(void)loadView{
     self.view = [MainCameraView new];
-    self.view.translatesAutoresizingMaskIntoConstraints = NO;
+//    self.view.translatesAutoresizingMaskIntoConstraints = NO;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.Delegate = self;
+    self.view.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {

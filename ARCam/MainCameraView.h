@@ -17,6 +17,6 @@
 @interface MainCameraView : UIView
 
 @property (nonatomic, strong) UIImageView *lastTakenPanoramasPreview;
-@property (nonatomic, weak) id<MainCameraViewDelegate> Delegate;
+@property (nonatomic, weak) id<MainCameraViewDelegate> delegate;
 
 @end

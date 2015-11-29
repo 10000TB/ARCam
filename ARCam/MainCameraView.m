@@ -167,7 +167,7 @@
 //***********************************
 -(void)lastTakenPanoramasPreviewTap:(UITapGestureRecognizer *)sender{
     NSLog(@"tappped");
-    [self.Delegate lastTakenPanoramasPreviewTapped];
+    [self.delegate lastTakenPanoramasPreviewTapped];
 }
 
 
