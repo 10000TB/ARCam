@@ -7,16 +7,26 @@
 //
 
 #import "MainCameraViewController.h"
+#import "GalleryViewController.h"
 
-@interface MainCameraViewController ()
+@interface MainCameraViewController ()<MainCameraViewDelegate>
+
+@property (nonatomic, strong) MainCameraView *view;
 
 @end
 
 @implementation MainCameraViewController
+@dynamic view;
+
+-(void)loadView{
+    self.view = [MainCameraView new];
+//    self.view.translatesAutoresizingMaskIntoConstraints = NO;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +34,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+//*********************************
+// MainCameraViewDelegate Methods
+//*********************************
+-(void)lastTakenPanoramasPreviewTapped{
+    GalleryViewController *galleryVC = [GalleryViewController new];
+    NSLog(@"Tapped in MainCameraVC");
+    [self presentViewController:galleryVC animated:YES completion:^{
+    }];
 }
-*/
+
 
 @end

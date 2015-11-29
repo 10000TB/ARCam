@@ -24,6 +24,7 @@
     MainCameraViewController *mainCameraViewController = [MainCameraViewController new];
     self.window.rootViewController = mainCameraViewController;
     
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
