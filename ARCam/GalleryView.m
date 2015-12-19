@@ -17,6 +17,8 @@
 @property (nonatomic, strong) UIView *underLineBelowNameIttextfield;
 @property (nonatomic, strong) UIButton *doneButton;
 
+@property (nonatomic, strong) UIView *galleryImageContainerView;
+
 @property (nonatomic, strong) UIView *bottomToolBar;
 @property (nonatomic, strong) UIButton *shareButton;
 @property (nonatomic, strong) UIButton *searchButton;
@@ -47,6 +49,8 @@
     [self.customNavBar addSubview:self.underLineBelowNameIttextfield];
     [self.customNavBar addSubview:self.doneButton];
 
+    [self addSubview:self.galleryImageContainerView];
+    
     [self addSubview:self.bottomToolBar];
     [self.bottomToolBar addSubview:self.shareButton];
     [self.bottomToolBar addSubview:self.searchButton];
@@ -144,6 +148,7 @@
         _searchButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _searchButton.translatesAutoresizingMaskIntoConstraints = NO;
         [_searchButton setBackgroundImage:[UIImage imageNamed:@"search"] forState:UIControlStateNormal];
+        [_searchButton setHidden:YES];
     }
     return _searchButton;
 }
@@ -155,6 +160,15 @@
         [_trashButton setBackgroundImage:[UIImage imageNamed:@"trash"] forState:UIControlStateNormal];
     }
     return _trashButton;
+}
+
+-(UIView *)galleryImageContainerView{
+    if (!_galleryImageContainerView) {
+        _galleryImageContainerView = [UIView new];
+        _galleryImageContainerView.translatesAutoresizingMaskIntoConstraints = NO;
+        _galleryImageContainerView.backgroundColor = [UIColor whiteColor];
+    }
+    return _galleryImageContainerView;
 }
 //*********************************
 // constraints
@@ -183,6 +197,11 @@
                                           @"doneButtonWidth":[NSNumber numberWithFloat:63.f],
                                           @"doneButtonHeight":[NSNumber numberWithFloat:22.f]
                                           };
+    
+    NSDictionary *galleryImageContainerViewMetrics = @{
+                                        
+                                                       };
+    
     
     NSDictionary *bottomToolBarMetrics = @{
                                            @"bottomToolBarHeight":[NSNumber numberWithFloat:48.f],
@@ -285,6 +304,12 @@
     [self addConstraints:trashButtonConstraints_H];
     [self addConstraints:trashButtonConstraints_V];
     [self addConstraint:trashButton_CenterY];
+    
+    //gallery image container view
+    NSArray *galleryImageContainerViewConstraints_V = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[_customNavBar]-0-[_galleryImageContainerView]-0-[_bottomToolBar]" options:0 metrics:galleryImageContainerViewMetrics views:NSDictionaryOfVariableBindings(_customNavBar,_galleryImageContainerView,_bottomToolBar)];
+    NSArray *galleryImageContainerViewConstraints_H = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_galleryImageContainerView]-0-|" options:0 metrics:galleryImageContainerViewMetrics views:NSDictionaryOfVariableBindings(_galleryImageContainerView)];
+    [self addConstraints:galleryImageContainerViewConstraints_H];
+    [self addConstraints:galleryImageContainerViewConstraints_V];
 }
 
 
