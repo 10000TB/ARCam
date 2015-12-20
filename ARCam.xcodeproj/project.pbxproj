@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00132DE61C2626A500159218 /* MomentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00132DE51C2626A500159218 /* MomentCollectionViewCell.m */; };
 		002967831BF57B11009A7DF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 002967821BF57B11009A7DF5 /* main.m */; };
 		002967861BF57B11009A7DF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 002967851BF57B11009A7DF5 /* AppDelegate.m */; };
 		0029678F1BF57B11009A7DF5 /* ARCam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0029678D1BF57B11009A7DF5 /* ARCam.xcdatamodeld */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00132DE41C2626A500159218 /* MomentCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomentCollectionViewCell.h; sourceTree = "<group>"; };
+		00132DE51C2626A500159218 /* MomentCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomentCollectionViewCell.m; sourceTree = "<group>"; };
 		0029677E1BF57B11009A7DF5 /* ARCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		002967821BF57B11009A7DF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		002967841BF57B11009A7DF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 		007162201C1431C600DEBBFA /* CellViews */ = {
 			isa = PBXGroup;
 			children = (
+				00132DE41C2626A500159218 /* MomentCollectionViewCell.h */,
+				00132DE51C2626A500159218 /* MomentCollectionViewCell.m */,
 			);
 			name = CellViews;
 			sourceTree = "<group>";
@@ -430,6 +435,7 @@
 				00B6FD7C1C0A9162002B1653 /* Constants.m in Sources */,
 				002967861BF57B11009A7DF5 /* AppDelegate.m in Sources */,
 				0029678F1BF57B11009A7DF5 /* ARCam.xcdatamodeld in Sources */,
+				00132DE61C2626A500159218 /* MomentCollectionViewCell.m in Sources */,
 				00B6FD771C0A7AC3002B1653 /* GalleryViewController.m in Sources */,
 				002967831BF57B11009A7DF5 /* main.m in Sources */,
 				0071621B1C142EA900DEBBFA /* SeeAllView.m in Sources */,

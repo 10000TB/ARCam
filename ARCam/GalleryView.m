@@ -85,6 +85,10 @@
         _seeAllLabel.text = @"See All";
         _seeAllLabel.textColor = [UIColor colorWithRed:3.0/255.0 green:122.0/255.0 blue:1.0 alpha:1.0];
         _seeAllLabel.font = [UIFont fontWithName:ARCamRegularFont size:16];
+        
+        UITapGestureRecognizer *seeAllTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(seeAllLabelTap:)];
+        [_seeAllLabel setUserInteractionEnabled:YES];
+        [_seeAllLabel addGestureRecognizer:seeAllTap];
     }
     return _seeAllLabel;
 }
@@ -310,6 +314,10 @@
     NSArray *galleryImageContainerViewConstraints_H = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_galleryImageContainerView]-0-|" options:0 metrics:galleryImageContainerViewMetrics views:NSDictionaryOfVariableBindings(_galleryImageContainerView)];
     [self addConstraints:galleryImageContainerViewConstraints_H];
     [self addConstraints:galleryImageContainerViewConstraints_V];
+}
+
+-(void)seeAllLabelTap:(UITapGestureRecognizer *)sender{
+    [self.delegate SeeAllButtonTapped];
 }
 
 

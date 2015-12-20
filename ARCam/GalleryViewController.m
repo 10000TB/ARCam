@@ -8,6 +8,7 @@
 
 #import "GalleryViewController.h"
 #import "GalleryView.h"
+#import "SeeAllViewController.h"
 
 @interface GalleryViewController ()<GalleryViewDelegate>
 
@@ -45,6 +46,11 @@
     }];
 }
 
-
+-(void)SeeAllButtonTapped{
+    SeeAllViewController *seeAllVC = [SeeAllViewController new];
+    [self presentViewController:seeAllVC animated:YES completion:^{
+        
+    }];
+}
 
 @end

@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol  SeeAllViewDelegate <NSObject>
+
+-(void)backButtonTapped:(UIButton *)sender;
+
+@end
+
 @interface SeeAllView : UIView
+
+@property (nonatomic, strong) UIView *CollectionViewContentView;
+@property (nonatomic, weak) id<SeeAllViewDelegate> delsgate;
 
 @end
