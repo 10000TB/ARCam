@@ -11,6 +11,7 @@
 @protocol GalleryViewDelegate <NSObject>
 
 -(void)goBackButtonTapped:(UIButton *)sender;
+-(void)SeeAllButtonTapped;
 
 @end
 
