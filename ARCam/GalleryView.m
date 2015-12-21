@@ -74,6 +74,7 @@
         _leftArrowImageView = [UIImageView new];
         _leftArrowImageView.translatesAutoresizingMaskIntoConstraints = NO;
         _leftArrowImageView.image = [UIImage imageNamed:@"leftArrow"];
+        [_leftArrowImageView setHidden:YES];
     }
     return _leftArrowImageView;
 }
@@ -185,7 +186,7 @@
                                           @"leftArrowLeft":[NSNumber numberWithFloat:0.0f],
                                           @"leftArrowBottom":[NSNumber numberWithFloat:8.f],
                                           @"leftArrowHeight":[NSNumber numberWithFloat:26.f],
-                                          @"leftArrowWidth":[NSNumber numberWithFloat:25],
+                                          @"leftArrowWidth":[NSNumber numberWithFloat:6],
                                           
                                           @"seeAllLabelLeft":[NSNumber numberWithFloat:0.f],
                                           @"seeAllLabelWidth":[NSNumber numberWithFloat:78.f],
