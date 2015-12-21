@@ -69,7 +69,7 @@
     if(!_backButton){
         _backButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _backButton.translatesAutoresizingMaskIntoConstraints = NO;
-        [_backButton setTitle:@"Back" forState:UIControlStateNormal];
+        [_backButton setTitle:@"Go Back" forState:UIControlStateNormal];
         _backButton.titleLabel.textColor = [UIColor colorWithRed:3.0/255.0 green:122.0/255.0 blue:1.0 alpha:1.0];
         [_backButton setTitleColor:[UIColor colorWithRed:3.0/255.0 green:122.0/255.0 blue:1.0 alpha:1.0] forState:UIControlStateNormal];
         
@@ -84,6 +84,7 @@
         _rightArrowImageView = [UIImageView new];
         _rightArrowImageView.translatesAutoresizingMaskIntoConstraints = NO;
         _rightArrowImageView.image = [UIImage imageNamed:@"rightArrow.png"];
+        [_rightArrowImageView setHidden:YES];
     }
     return _rightArrowImageView;
 }
@@ -104,13 +105,13 @@
                                           @"customNavBarHeight":[NSNumber numberWithFloat:64.f],
                                           
                                           @"backButtonRight":[NSNumber numberWithFloat:0.f],
-                                          @"backButtonWidth":[NSNumber numberWithFloat:48.f],
+                                          @"backButtonWidth":[NSNumber numberWithFloat:68.f],
                                           @"backButtonHeight":[NSNumber numberWithFloat:20.48f],
                                           
                                           @"rightArrowRight":[NSNumber numberWithFloat:0.0f],
                                           @"rightArrowBottom":[NSNumber numberWithFloat:8.f],
                                           @"rightArrowHeight":[NSNumber numberWithFloat:26.f],
-                                          @"rightArrowWidth":[NSNumber numberWithFloat:25],
+                                          @"rightArrowWidth":[NSNumber numberWithFloat:6],
                                           
                                           @"titleLabelBottom":[NSNumber numberWithFloat:12.f],
                                           @"titleLabelWidth":[NSNumber numberWithFloat:80.f],
